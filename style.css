@@ -1,0 +1,107 @@
+body{
+  background-color: powderblue;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 800px;
+}
+div {
+  background-color: salmon;
+  display: flex;
+  flex: 1;
+}
+header {
+  background-color: seagreen;
+  height: auto;
+  outline: solid;
+}
+nav {
+  background-color: sienna;
+  width: 150px;
+  outline: solid;
+}
+li {
+  text-align: left;
+  margin-left: 20px;
+}
+main {
+  background-color: silver;
+  flex: 1;
+  outline: solid;
+}
+img {
+  width: 100%;
+  outline: solid;
+  vertical-align: bottom;
+}
+aside {
+  background-color: tan;
+  width: 150px;
+  outline: solid;
+}
+footer {
+  background-color: violet;
+  height: 100px;
+  outline: solid;
+}
+.dia{
+  text-align: left;
+  color: #111111;
+}
+h1{
+  margin: 0;
+  text-align: center;
+  font-family: "Comic Sans MS", sans-serif;
+}
+h3{
+  text-align: center;
+}
+h3.menu{
+  margin-bottom: 0em;
+  margin-left: 0px;
+}
+hr{
+  margin: 0;
+  outline: solid;
+  color: black;
+}
+p{
+  background-color: teal;
+  text-align: center;
+  margin: 0;
+}
+table{
+  margin: auto;
+  border: 1px black;
+}
+:visited{
+  color: black;
+}
+:link{
+  color: black;
+}
+td{
+  width: 60px;
+}
+a{
+  text-decoration: none;
+}
+.blink{
+  animation: blinkAnime 1s infinite normal;
+}
+@keyframes blinkAnime{
+  0% { opacity: 1;}
+  100% { opacity: 0;}
+}
+@media screen and (max-width: 900px) {
+  body, nav, aside {
+    width: 100%;
+  }
+  div {
+    flex-direction: column;
+  }
+  main {
+    order: -1;
+  }
+}
